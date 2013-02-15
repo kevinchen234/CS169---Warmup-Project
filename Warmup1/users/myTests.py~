@@ -1,0 +1,7 @@
+from users.models import Users, UserManager
+
+print(Users.user_objects.resetFixture()) #should return 1
+
+#Users.user_objects.login("add", "add") #should return -1
+
+#Users.user_objects.add("add", "add") 
