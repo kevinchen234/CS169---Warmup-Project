@@ -68,7 +68,7 @@ def resetFixture(request):
 def unitTests(request):
     infoRequest = json.loads(request.body)
     buffer = StringIO.StringIO()
-    suite = unittest.TestLoader().loadTestsFromTestCase(Users.unitTests)
+    suite = unittest.TestLoader().loadTestsFromTestCase(self.unitTests)
     result = unittest.TextTestRunner(stream = buffer, verbosity = 2).run(suite)
 #    response = Users.unitTests()
 

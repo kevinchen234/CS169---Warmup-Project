@@ -1,0 +1,36 @@
+
+======= Running functional tests ======
+
+python -m unittest discover -v 
+testAdd1 (testSimple.TestAddUser) ... ERROR
+testUnit (testSimple.TestUnit) ... ERROR
+
+======================================================================
+ERROR: testAdd1 (testSimple.TestAddUser)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/kevin/Documents/CS169/WarmUp1/warmup/testLib.py", line 81, in setUp
+    self.conn = httplib.HTTPConnection(RestTestCase.serverToTest, timeout=1)
+  File "/usr/lib/python2.7/httplib.py", line 693, in __init__
+    self._set_hostport(host, port)
+  File "/usr/lib/python2.7/httplib.py", line 721, in _set_hostport
+    raise InvalidURL("nonnumeric port: '%s'" % host[i+1:])
+InvalidURL: nonnumeric port: '//cs169-logincounter.herokuapp.com/'
+
+======================================================================
+ERROR: testUnit (testSimple.TestUnit)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/kevin/Documents/CS169/WarmUp1/warmup/testLib.py", line 81, in setUp
+    self.conn = httplib.HTTPConnection(RestTestCase.serverToTest, timeout=1)
+  File "/usr/lib/python2.7/httplib.py", line 693, in __init__
+    self._set_hostport(host, port)
+  File "/usr/lib/python2.7/httplib.py", line 721, in _set_hostport
+    raise InvalidURL("nonnumeric port: '%s'" % host[i+1:])
+InvalidURL: nonnumeric port: '//cs169-logincounter.herokuapp.com/'
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+FAILED (errors=2)
+make: *** [func_tests] Error 1

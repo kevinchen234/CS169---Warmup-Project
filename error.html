@@ -6,7 +6,7 @@ testAdd1 (testSimple.TestAddUser) ... ok
 testUnit (testSimple.TestUnit) ... Got exception when processing response to url=/TESTAPI/unitTests method=POST data=None
   Response status = 500
   Resonse headers: 
-    date  =  Fri, 15 Feb 2013 22:32:13 GMT
+    date  =  Sat, 16 Feb 2013 00:07:24 GMT
     content-type  =  text/html
     server  =  WSGIServer/0.1 Python/2.7.3
 Data string: 
@@ -195,7 +195,7 @@ Data string:
     </tr>
     <tr>
       <th>Server time:</th>
-      <td>Fri, 15 Feb 2013 16:32:13 -0600</td>
+      <td>Fri, 15 Feb 2013 18:07:24 -0600</td>
     </tr>
   </table>
 </div>
@@ -213,13 +213,13 @@ Data string:
           <code>/usr/local/lib/python2.7/dist-packages/django/core/handlers/base.py</code> in <code>get_response</code>
 
           
-            <div class="context" id="c140144111955840">
+            <div class="context" id="c140253163924440">
               
-                <ol start="104" class="pre-context" id="pre140144111955840"><li onclick="toggle('pre140144111955840', 'post140144111955840')"><pre>                    for middleware_method in self._view_middleware:</pre></li><li onclick="toggle('pre140144111955840', 'post140144111955840')"><pre>                        response = middleware_method(request, callback, callback_args, callback_kwargs)</pre></li><li onclick="toggle('pre140144111955840', 'post140144111955840')"><pre>                        if response:</pre></li><li onclick="toggle('pre140144111955840', 'post140144111955840')"><pre>                            break</pre></li><li onclick="toggle('pre140144111955840', 'post140144111955840')"><pre></pre></li><li onclick="toggle('pre140144111955840', 'post140144111955840')"><pre>                if response is None:</pre></li><li onclick="toggle('pre140144111955840', 'post140144111955840')"><pre>                    try:</pre></li></ol>
+                <ol start="104" class="pre-context" id="pre140253163924440"><li onclick="toggle('pre140253163924440', 'post140253163924440')"><pre>                    for middleware_method in self._view_middleware:</pre></li><li onclick="toggle('pre140253163924440', 'post140253163924440')"><pre>                        response = middleware_method(request, callback, callback_args, callback_kwargs)</pre></li><li onclick="toggle('pre140253163924440', 'post140253163924440')"><pre>                        if response:</pre></li><li onclick="toggle('pre140253163924440', 'post140253163924440')"><pre>                            break</pre></li><li onclick="toggle('pre140253163924440', 'post140253163924440')"><pre></pre></li><li onclick="toggle('pre140253163924440', 'post140253163924440')"><pre>                if response is None:</pre></li><li onclick="toggle('pre140253163924440', 'post140253163924440')"><pre>                    try:</pre></li></ol>
               
-              <ol start="111" class="context-line"><li onclick="toggle('pre140144111955840', 'post140144111955840')"><pre>                        response = callback(request, *callback_args, **callback_kwargs)</pre> <span>...</span></li></ol>
+              <ol start="111" class="context-line"><li onclick="toggle('pre140253163924440', 'post140253163924440')"><pre>                        response = callback(request, *callback_args, **callback_kwargs)</pre> <span>...</span></li></ol>
               
-                <ol start='112' class="post-context" id="post140144111955840"><li onclick="toggle('pre140144111955840', 'post140144111955840')"><pre>                    except Exception, e:</pre></li><li onclick="toggle('pre140144111955840', 'post140144111955840')"><pre>                        # If the view raised an exception, run it through exception</pre></li><li onclick="toggle('pre140144111955840', 'post140144111955840')"><pre>                        # middleware, and if the exception middleware returns a</pre></li><li onclick="toggle('pre140144111955840', 'post140144111955840')"><pre>                        # response, use that. Otherwise, reraise the exception.</pre></li><li onclick="toggle('pre140144111955840', 'post140144111955840')"><pre>                        for middleware_method in self._exception_middleware:</pre></li><li onclick="toggle('pre140144111955840', 'post140144111955840')"><pre>                            response = middleware_method(request, e)</pre></li></ol>
+                <ol start='112' class="post-context" id="post140253163924440"><li onclick="toggle('pre140253163924440', 'post140253163924440')"><pre>                    except Exception, e:</pre></li><li onclick="toggle('pre140253163924440', 'post140253163924440')"><pre>                        # If the view raised an exception, run it through exception</pre></li><li onclick="toggle('pre140253163924440', 'post140253163924440')"><pre>                        # middleware, and if the exception middleware returns a</pre></li><li onclick="toggle('pre140253163924440', 'post140253163924440')"><pre>                        # response, use that. Otherwise, reraise the exception.</pre></li><li onclick="toggle('pre140253163924440', 'post140253163924440')"><pre>                        for middleware_method in self._exception_middleware:</pre></li><li onclick="toggle('pre140253163924440', 'post140253163924440')"><pre>                            response = middleware_method(request, e)</pre></li></ol>
               
             </div>
           
@@ -227,10 +227,10 @@ Data string:
           
             <div class="commands">
                 
-                    <a href="#" onclick="return varToggle(this, '140144111955840')"><span>&#x25b6;</span> Local vars</a>
+                    <a href="#" onclick="return varToggle(this, '140253163924440')"><span>&#x25b6;</span> Local vars</a>
                 
             </div>
-            <table class="vars" id="v140144111955840">
+            <table class="vars" id="v140253163924440">
               <thead>
                 <tr>
                   <th>Variable</th>
@@ -256,27 +256,27 @@ Data string:
                 
                   <tr>
                     <td>settings</td>
-                    <td class="code"><pre>&lt;django.conf.LazySettings object at 0x2b11c10&gt;</pre></td>
+                    <td class="code"><pre>&lt;django.conf.LazySettings object at 0x2135c10&gt;</pre></td>
                   </tr>
                 
                   <tr>
                     <td>middleware_method</td>
-                    <td class="code"><pre>&lt;bound method CsrfViewMiddleware.process_view of &lt;django.middleware.csrf.CsrfViewMiddleware object at 0x7f75e035d550&gt;&gt;</pre></td>
+                    <td class="code"><pre>&lt;bound method CsrfViewMiddleware.process_view of &lt;django.middleware.csrf.CsrfViewMiddleware object at 0x7f8f4435e550&gt;&gt;</pre></td>
                   </tr>
                 
                   <tr>
                     <td>self</td>
-                    <td class="code"><pre>&lt;django.core.handlers.wsgi.WSGIHandler object at 0x7f75e02a0350&gt;</pre></td>
+                    <td class="code"><pre>&lt;django.core.handlers.wsgi.WSGIHandler object at 0x7f8f442a0350&gt;</pre></td>
                   </tr>
                 
                   <tr>
                     <td>request</td>
-                    <td class="code"><pre>&#39;&lt;WSGIRequest\npath:/TESTAPI/unitTests,\nGET:&lt;QueryDict: {}&gt;,\nPOST:&lt;QueryDict: {}&gt;,\nCOOKIES:{},\nMETA:{\&#39;COLORTERM\&#39;: \&#39;gnome-terminal\&#39;,\n \&#39;COMPIZ_CONFIG_PROFILE\&#39;: \&#39;ubuntu\&#39;,\n \&#39;COMP_WORDBREAKS\&#39;: \&#39; \\t\\n&quot;\\\&#39;&gt;&lt;;|&amp;(:\&#39;,\n \&#39;CONTENT_LENGTH\&#39;: \&#39;\&#39;,\n \&#39;CONTENT_TYPE\&#39;: \&#39;text/plain\&#39;,\n \&#39;CSRF_COOKIE\&#39;: \&#39;7QQ7BrEiHKTd9ipp8mn6oMFNeOMJwPMO\&#39;,\n \&#39;DBUS_SESSION_BUS_ADDRESS\&#39;: \&#39;unix:abstract=/tmp/dbus-LK3E0cCbrL,guid=5c87e9953cf04be38c675c66000000e6\&#39;,\n \&#39;DEFAULTS_PATH\&#39;: \&#39;/usr/share/gconf/ubuntu.default.path\&#39;,\n \&#39;DESKTOP_SESSION\&#39;: \&#39;ubuntu\&#39;,\n \&#39;DISPLAY\&#39;: \&#39;:0.0\&#39;,\n \&#39;DJANGO_SETTINGS_MODULE\&#39;: \&#39;Warmup1.settings\&#39;,\n \&#39;GATEWAY_INTERFACE\&#39;: \&#39;CGI/1.1\&#39;,\n \&#39;GDMSESSION\&#39;: \&#39;ubuntu\&#39;,\n \&#39;GNOME_DESKTOP_SESSION_ID\&#39;: \&#39;this-is-deprecated\&#39;,\n \&#39;GNOME_KEYRING_CONTROL\&#39;: \&#39;/tmp/keyring-plsoRd\&#39;,\n \&#39;GNOME_KEYRING_PID\&#39;: \&#39;2274\&#39;,\n \&#39;GPG_AGENT_INFO\&#39;: \&#39;/tmp/keyring-plsoRd/gpg:0:1\&#39;,\n \&#39;HOME\&#39;: \&#39;/home/kevin\&#39;,\n \&#39;HTTP_ACCEPT_ENCODING\&#39;: \&#39;identity\&#39;,\n \&#39;HTTP_HOST\&#39;: \&#39;localhost:8000\&#39;,\n \&#39;LANG\&#39;: \&#39;en_US.UTF-8\&#39;,\n \&#39;LESSCLOSE\&#39;: \&#39;/usr/bin/lesspipe %s %s\&#39;,\n \&#39;LESSOPEN\&#39;: \&#39;| /usr/bin/lesspipe %s\&#39;,\n \&#39;LOGNAME\&#39;: \&#39;kevin\&#39;,\n \&#39;LS_COLORS\&#39;: \&#39;rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:\&#39;,\n \&#39;MANDATORY_PATH\&#39;: \&#39;/usr/share/gconf/ubuntu.mandatory.path\&#39;,\n \&#39;OLDPWD\&#39;: \&#39;/home/kevin/Documents/CS169/WarmUp1/warmup/Warmup1/users\&#39;,\n \&#39;PATH\&#39;: \&#39;/home/kevin/.rbenv/shims:/home/kevin/.rbenv/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games\&#39;,\n \&#39;PATH_INFO\&#39;: u\&#39;/TESTAPI/unitTests\&#39;,\n \&#39;PWD\&#39;: \&#39;/home/kevin/Documents/CS169/WarmUp1/warmup/Warmup1\&#39;,\n \&#39;QUERY_STRING\&#39;: \&#39;\&#39;,\n \&#39;REMOTE_ADDR\&#39;: \&#39;127.0.0.1\&#39;,\n \&#39;REMOTE_HOST\&#39;: \&#39;\&#39;,\n \&#39;REQUEST_METHOD\&#39;: \&#39;POST\&#39;,\n \&#39;RUN_MAIN\&#39;: \&#39;true\&#39;,\n \&#39;SCRIPT_NAME\&#39;: u\&#39;\&#39;,\n \&#39;SERVER_NAME\&#39;: \&#39;localhost\&#39;,\n \&#39;SERVER_PORT\&#39;: \&#39;8000\&#39;,\n \&#39;SERVER_PROTOCOL\&#39;: \&#39;HTTP/1.1\&#39;,\n \&#39;SERVER_SOFTWARE\&#39;: \&#39;WSGIServer/0.1 Python/2.7.3\&#39;,\n \&#39;SESSION_MANAGER\&#39;: \&#39;local/kevin:@/tmp/.ICE-unix/2285,unix/kevin:/tmp/.ICE-unix/2285\&#39;,\n \&#39;SHELL\&#39;: \&#39;/bin/bash\&#39;,\n \&#39;SHLVL\&#39;: \&#39;1\&#39;,\n \&#39;SSH_AGENT_PID\&#39;: \&#39;2323\&#39;,\n \&#39;SSH_AUTH_SOCK\&#39;: \&#39;/tmp/keyring-plsoRd/ssh\&#39;,\n \&#39;TERM\&#39;: \&#39;xterm\&#39;,\n \&#39;TZ\&#39;: \&#39;America/Chicago\&#39;,\n \&#39;UBUNTU_MENUPROXY\&#39;: \&#39;libappmenu.so\&#39;,\n \&#39;USER\&#39;: \&#39;kevin\&#39;,\n \&#39;WINDOWID\&#39;: \&#39;71303174\&#39;,\n \&#39;XAUTHORITY\&#39;: \&#39;/home/kevin/.Xauthority\&#39;,\n \&#39;XDG_CONFIG_DIRS\&#39;: \&#39;/etc/xdg/xdg-ubuntu:/etc/xdg\&#39;,\n \&#39;XDG_CURRENT_DESKTOP\&#39;: \&#39;Unity\&#39;,\n \&#39;XDG_DATA_DIRS\&#39;: \&#39;/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/\&#39;,\n \&#39;XDG_SEAT_PATH\&#39;: \&#39;/org/freedesktop/DisplayManager/Seat0\&#39;,\n \&#39;XDG_SESSION_COOKIE\&#39;: \&#39;9962c00af04af6f9b6a7f89d0000000e-1360357377.44568-1882898642\&#39;,\n \&#39;XDG_SESSION_PATH\&#39;: \&#39;/org/freedesktop/DisplayManager/Session0\&#39;,\n \&#39;_\&#39;: \&#39;/usr/bin/python\&#39;,\n \&#39;wsgi.errors\&#39;: &lt;open file \&#39;&lt;stderr&gt;\&#39;, mode \&#39;w\&#39; at 0x7f75e7e0f270&gt;,\n \&#39;wsgi.file_wrapper\&#39;: &lt;class wsgiref.util.FileWrapper at 0x306f3f8&gt;,\n \&#39;wsgi.input\&#39;: &lt;socket._fileobject object at 0x7f75d8032ed0&gt;,\n \&#39;wsgi.multiprocess\&#39;: False,\n \&#39;wsgi.multithread\&#39;: True,\n \&#39;wsgi.run_once\&#39;: False,\n \&#39;wsgi.url_scheme\&#39;: \&#39;http\&#39;,\n \&#39;wsgi.version\&#39;: (1, 0)}&gt;&#39;</pre></td>
+                    <td class="code"><pre>&#39;&lt;WSGIRequest\npath:/TESTAPI/unitTests,\nGET:&lt;QueryDict: {}&gt;,\nPOST:&lt;QueryDict: {}&gt;,\nCOOKIES:{},\nMETA:{\&#39;COLORTERM\&#39;: \&#39;gnome-terminal\&#39;,\n \&#39;COMPIZ_CONFIG_PROFILE\&#39;: \&#39;ubuntu\&#39;,\n \&#39;COMP_WORDBREAKS\&#39;: \&#39; \\t\\n&quot;\\\&#39;&gt;&lt;;|&amp;(:\&#39;,\n \&#39;CONTENT_LENGTH\&#39;: \&#39;\&#39;,\n \&#39;CONTENT_TYPE\&#39;: \&#39;text/plain\&#39;,\n \&#39;CSRF_COOKIE\&#39;: \&#39;xrVknGmbApEBoNWkYMpVpJvgJQvvZf14\&#39;,\n \&#39;DBUS_SESSION_BUS_ADDRESS\&#39;: \&#39;unix:abstract=/tmp/dbus-LK3E0cCbrL,guid=5c87e9953cf04be38c675c66000000e6\&#39;,\n \&#39;DEFAULTS_PATH\&#39;: \&#39;/usr/share/gconf/ubuntu.default.path\&#39;,\n \&#39;DESKTOP_SESSION\&#39;: \&#39;ubuntu\&#39;,\n \&#39;DISPLAY\&#39;: \&#39;:0.0\&#39;,\n \&#39;DJANGO_SETTINGS_MODULE\&#39;: \&#39;Warmup1.settings\&#39;,\n \&#39;GATEWAY_INTERFACE\&#39;: \&#39;CGI/1.1\&#39;,\n \&#39;GDMSESSION\&#39;: \&#39;ubuntu\&#39;,\n \&#39;GNOME_DESKTOP_SESSION_ID\&#39;: \&#39;this-is-deprecated\&#39;,\n \&#39;GNOME_KEYRING_CONTROL\&#39;: \&#39;/tmp/keyring-plsoRd\&#39;,\n \&#39;GNOME_KEYRING_PID\&#39;: \&#39;2274\&#39;,\n \&#39;GPG_AGENT_INFO\&#39;: \&#39;/tmp/keyring-plsoRd/gpg:0:1\&#39;,\n \&#39;HOME\&#39;: \&#39;/home/kevin\&#39;,\n \&#39;HTTP_ACCEPT_ENCODING\&#39;: \&#39;identity\&#39;,\n \&#39;HTTP_HOST\&#39;: \&#39;localhost:8000\&#39;,\n \&#39;LANG\&#39;: \&#39;en_US.UTF-8\&#39;,\n \&#39;LESSCLOSE\&#39;: \&#39;/usr/bin/lesspipe %s %s\&#39;,\n \&#39;LESSOPEN\&#39;: \&#39;| /usr/bin/lesspipe %s\&#39;,\n \&#39;LOGNAME\&#39;: \&#39;kevin\&#39;,\n \&#39;LS_COLORS\&#39;: \&#39;rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:\&#39;,\n \&#39;MANDATORY_PATH\&#39;: \&#39;/usr/share/gconf/ubuntu.mandatory.path\&#39;,\n \&#39;OLDPWD\&#39;: \&#39;/home/kevin/Documents/CS169/WarmUp1/warmup/Warmup1/users\&#39;,\n \&#39;PATH\&#39;: \&#39;/home/kevin/.rbenv/shims:/home/kevin/.rbenv/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games\&#39;,\n \&#39;PATH_INFO\&#39;: u\&#39;/TESTAPI/unitTests\&#39;,\n \&#39;PWD\&#39;: \&#39;/home/kevin/Documents/CS169/WarmUp1/warmup/Warmup1\&#39;,\n \&#39;QUERY_STRING\&#39;: \&#39;\&#39;,\n \&#39;REMOTE_ADDR\&#39;: \&#39;127.0.0.1\&#39;,\n \&#39;REMOTE_HOST\&#39;: \&#39;\&#39;,\n \&#39;REQUEST_METHOD\&#39;: \&#39;POST\&#39;,\n \&#39;RUN_MAIN\&#39;: \&#39;true\&#39;,\n \&#39;SCRIPT_NAME\&#39;: u\&#39;\&#39;,\n \&#39;SERVER_NAME\&#39;: \&#39;localhost\&#39;,\n \&#39;SERVER_PORT\&#39;: \&#39;8000\&#39;,\n \&#39;SERVER_PROTOCOL\&#39;: \&#39;HTTP/1.1\&#39;,\n \&#39;SERVER_SOFTWARE\&#39;: \&#39;WSGIServer/0.1 Python/2.7.3\&#39;,\n \&#39;SESSION_MANAGER\&#39;: \&#39;local/kevin:@/tmp/.ICE-unix/2285,unix/kevin:/tmp/.ICE-unix/2285\&#39;,\n \&#39;SHELL\&#39;: \&#39;/bin/bash\&#39;,\n \&#39;SHLVL\&#39;: \&#39;1\&#39;,\n \&#39;SSH_AGENT_PID\&#39;: \&#39;2323\&#39;,\n \&#39;SSH_AUTH_SOCK\&#39;: \&#39;/tmp/keyring-plsoRd/ssh\&#39;,\n \&#39;TERM\&#39;: \&#39;xterm\&#39;,\n \&#39;TZ\&#39;: \&#39;America/Chicago\&#39;,\n \&#39;UBUNTU_MENUPROXY\&#39;: \&#39;libappmenu.so\&#39;,\n \&#39;USER\&#39;: \&#39;kevin\&#39;,\n \&#39;WINDOWID\&#39;: \&#39;71303174\&#39;,\n \&#39;XAUTHORITY\&#39;: \&#39;/home/kevin/.Xauthority\&#39;,\n \&#39;XDG_CONFIG_DIRS\&#39;: \&#39;/etc/xdg/xdg-ubuntu:/etc/xdg\&#39;,\n \&#39;XDG_CURRENT_DESKTOP\&#39;: \&#39;Unity\&#39;,\n \&#39;XDG_DATA_DIRS\&#39;: \&#39;/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/\&#39;,\n \&#39;XDG_SEAT_PATH\&#39;: \&#39;/org/freedesktop/DisplayManager/Seat0\&#39;,\n \&#39;XDG_SESSION_COOKIE\&#39;: \&#39;9962c00af04af6f9b6a7f89d0000000e-1360357377.44568-1882898642\&#39;,\n \&#39;XDG_SESSION_PATH\&#39;: \&#39;/org/freedesktop/DisplayManager/Session0\&#39;,\n \&#39;_\&#39;: \&#39;/usr/bin/python\&#39;,\n \&#39;wsgi.errors\&#39;: &lt;open file \&#39;&lt;stderr&gt;\&#39;, mode \&#39;w\&#39; at 0x7f8f4d954270&gt;,\n \&#39;wsgi.file_wrapper\&#39;: &lt;class wsgiref.util.FileWrapper at 0x26933f8&gt;,\n \&#39;wsgi.input\&#39;: &lt;socket._fileobject object at 0x7f8f3c0340d0&gt;,\n \&#39;wsgi.multiprocess\&#39;: False,\n \&#39;wsgi.multithread\&#39;: True,\n \&#39;wsgi.run_once\&#39;: False,\n \&#39;wsgi.url_scheme\&#39;: \&#39;http\&#39;,\n \&#39;wsgi.version\&#39;: (1, 0)}&gt;&#39;</pre></td>
                   </tr>
                 
                   <tr>
                     <td>callback</td>
-                    <td class="code"><pre>&lt;function unitTests at 0x7f75e036b320&gt;</pre></td>
+                    <td class="code"><pre>&lt;function unitTests at 0x7f8f4436c320&gt;</pre></td>
                   </tr>
                 
                   <tr>
@@ -313,13 +313,13 @@ Data string:
           <code>/usr/local/lib/python2.7/dist-packages/django/views/decorators/csrf.py</code> in <code>wrapped_view</code>
 
           
-            <div class="context" id="c140144111953248">
+            <div class="context" id="c140253163924368">
               
-                <ol start="70" class="pre-context" id="pre140144111953248"><li onclick="toggle('pre140144111953248', 'post140144111953248')"><pre>    &quot;&quot;&quot;</pre></li><li onclick="toggle('pre140144111953248', 'post140144111953248')"><pre>    Marks a view function as being exempt from the CSRF view protection.</pre></li><li onclick="toggle('pre140144111953248', 'post140144111953248')"><pre>    &quot;&quot;&quot;</pre></li><li onclick="toggle('pre140144111953248', 'post140144111953248')"><pre>    # We could just do view_func.csrf_exempt = True, but decorators</pre></li><li onclick="toggle('pre140144111953248', 'post140144111953248')"><pre>    # are nicer if they don&#39;t have side-effects, so we return a new</pre></li><li onclick="toggle('pre140144111953248', 'post140144111953248')"><pre>    # function.</pre></li><li onclick="toggle('pre140144111953248', 'post140144111953248')"><pre>    def wrapped_view(*args, **kwargs):</pre></li></ol>
+                <ol start="70" class="pre-context" id="pre140253163924368"><li onclick="toggle('pre140253163924368', 'post140253163924368')"><pre>    &quot;&quot;&quot;</pre></li><li onclick="toggle('pre140253163924368', 'post140253163924368')"><pre>    Marks a view function as being exempt from the CSRF view protection.</pre></li><li onclick="toggle('pre140253163924368', 'post140253163924368')"><pre>    &quot;&quot;&quot;</pre></li><li onclick="toggle('pre140253163924368', 'post140253163924368')"><pre>    # We could just do view_func.csrf_exempt = True, but decorators</pre></li><li onclick="toggle('pre140253163924368', 'post140253163924368')"><pre>    # are nicer if they don&#39;t have side-effects, so we return a new</pre></li><li onclick="toggle('pre140253163924368', 'post140253163924368')"><pre>    # function.</pre></li><li onclick="toggle('pre140253163924368', 'post140253163924368')"><pre>    def wrapped_view(*args, **kwargs):</pre></li></ol>
               
-              <ol start="77" class="context-line"><li onclick="toggle('pre140144111953248', 'post140144111953248')"><pre>        return view_func(*args, **kwargs)</pre> <span>...</span></li></ol>
+              <ol start="77" class="context-line"><li onclick="toggle('pre140253163924368', 'post140253163924368')"><pre>        return view_func(*args, **kwargs)</pre> <span>...</span></li></ol>
               
-                <ol start='78' class="post-context" id="post140144111953248"><li onclick="toggle('pre140144111953248', 'post140144111953248')"><pre>    wrapped_view.csrf_exempt = True</pre></li><li onclick="toggle('pre140144111953248', 'post140144111953248')"><pre>    return wraps(view_func, assigned=available_attrs(view_func))(wrapped_view)</pre></li></ol>
+                <ol start='78' class="post-context" id="post140253163924368"><li onclick="toggle('pre140253163924368', 'post140253163924368')"><pre>    wrapped_view.csrf_exempt = True</pre></li><li onclick="toggle('pre140253163924368', 'post140253163924368')"><pre>    return wraps(view_func, assigned=available_attrs(view_func))(wrapped_view)</pre></li></ol>
               
             </div>
           
@@ -327,10 +327,10 @@ Data string:
           
             <div class="commands">
                 
-                    <a href="#" onclick="return varToggle(this, '140144111953248')"><span>&#x25b6;</span> Local vars</a>
+                    <a href="#" onclick="return varToggle(this, '140253163924368')"><span>&#x25b6;</span> Local vars</a>
                 
             </div>
-            <table class="vars" id="v140144111953248">
+            <table class="vars" id="v140253163924368">
               <thead>
                 <tr>
                   <th>Variable</th>
@@ -351,7 +351,7 @@ META:{&#39;COLORTERM&#39;: &#39;gnome-terminal&#39;,
  &#39;COMP_WORDBREAKS&#39;: &#39; \t\n&quot;\&#39;&gt;&lt;;|&amp;(:&#39;,
  &#39;CONTENT_LENGTH&#39;: &#39;&#39;,
  &#39;CONTENT_TYPE&#39;: &#39;text/plain&#39;,
- &#39;CSRF_COOKIE&#39;: &#39;7QQ7BrEiHKTd9ipp8mn6oMFNeOMJwPMO&#39;,
+ &#39;CSRF_COOKIE&#39;: &#39;xrVknGmbApEBoNWkYMpVpJvgJQvvZf14&#39;,
  &#39;DBUS_SESSION_BUS_ADDRESS&#39;: &#39;unix:abstract=/tmp/dbus-LK3E0cCbrL,guid=5c87e9953cf04be38c675c66000000e6&#39;,
  &#39;DEFAULTS_PATH&#39;: &#39;/usr/share/gconf/ubuntu.default.path&#39;,
  &#39;DESKTOP_SESSION&#39;: &#39;ubuntu&#39;,
@@ -404,9 +404,9 @@ META:{&#39;COLORTERM&#39;: &#39;gnome-terminal&#39;,
  &#39;XDG_SESSION_COOKIE&#39;: &#39;9962c00af04af6f9b6a7f89d0000000e-1360357377.44568-1882898642&#39;,
  &#39;XDG_SESSION_PATH&#39;: &#39;/org/freedesktop/DisplayManager/Session0&#39;,
  &#39;_&#39;: &#39;/usr/bin/python&#39;,
- &#39;wsgi.errors&#39;: &lt;open file &#39;&lt;stderr&gt;&#39;, mode &#39;w&#39; at 0x7f75e7e0f270&gt;,
- &#39;wsgi.file_wrapper&#39;: &lt;class wsgiref.util.FileWrapper at 0x306f3f8&gt;,
- &#39;wsgi.input&#39;: &lt;socket._fileobject object at 0x7f75d8032ed0&gt;,
+ &#39;wsgi.errors&#39;: &lt;open file &#39;&lt;stderr&gt;&#39;, mode &#39;w&#39; at 0x7f8f4d954270&gt;,
+ &#39;wsgi.file_wrapper&#39;: &lt;class wsgiref.util.FileWrapper at 0x26933f8&gt;,
+ &#39;wsgi.input&#39;: &lt;socket._fileobject object at 0x7f8f3c0340d0&gt;,
  &#39;wsgi.multiprocess&#39;: False,
  &#39;wsgi.multithread&#39;: True,
  &#39;wsgi.run_once&#39;: False,
@@ -416,7 +416,7 @@ META:{&#39;COLORTERM&#39;: &#39;gnome-terminal&#39;,
                 
                   <tr>
                     <td>view_func</td>
-                    <td class="code"><pre>&lt;function unitTests at 0x7f75e036b2a8&gt;</pre></td>
+                    <td class="code"><pre>&lt;function unitTests at 0x7f8f4436c2a8&gt;</pre></td>
                   </tr>
                 
                   <tr>
@@ -433,13 +433,13 @@ META:{&#39;COLORTERM&#39;: &#39;gnome-terminal&#39;,
           <code>/home/kevin/Documents/CS169/WarmUp1/warmup/Warmup1/users/views.py</code> in <code>unitTests</code>
 
           
-            <div class="context" id="c140144111953968">
+            <div class="context" id="c140253163924296">
               
-                <ol start="62" class="pre-context" id="pre140144111953968"><li onclick="toggle('pre140144111953968', 'post140144111953968')"><pre>#    response = Users.resetFixture()</pre></li><li onclick="toggle('pre140144111953968', 'post140144111953968')"><pre>    response = Users.user_objects.resetFixture()</pre></li><li onclick="toggle('pre140144111953968', 'post140144111953968')"><pre>    if (response == SUCCESS):</pre></li><li onclick="toggle('pre140144111953968', 'post140144111953968')"><pre>        return HttpResponse(json.dumps({&quot;errCode&quot; : SUCCESS}), content_type = &quot;application/json&quot;)</pre></li><li onclick="toggle('pre140144111953968', 'post140144111953968')"><pre></pre></li><li onclick="toggle('pre140144111953968', 'post140144111953968')"><pre>@csrf_exempt        </pre></li><li onclick="toggle('pre140144111953968', 'post140144111953968')"><pre>def unitTests(request):</pre></li></ol>
+                <ol start="62" class="pre-context" id="pre140253163924296"><li onclick="toggle('pre140253163924296', 'post140253163924296')"><pre>#    response = Users.resetFixture()</pre></li><li onclick="toggle('pre140253163924296', 'post140253163924296')"><pre>    response = Users.user_objects.resetFixture()</pre></li><li onclick="toggle('pre140253163924296', 'post140253163924296')"><pre>    if (response == SUCCESS):</pre></li><li onclick="toggle('pre140253163924296', 'post140253163924296')"><pre>        return HttpResponse(json.dumps({&quot;errCode&quot; : SUCCESS}), content_type = &quot;application/json&quot;)</pre></li><li onclick="toggle('pre140253163924296', 'post140253163924296')"><pre></pre></li><li onclick="toggle('pre140253163924296', 'post140253163924296')"><pre>@csrf_exempt        </pre></li><li onclick="toggle('pre140253163924296', 'post140253163924296')"><pre>def unitTests(request):</pre></li></ol>
               
-              <ol start="69" class="context-line"><li onclick="toggle('pre140144111953968', 'post140144111953968')"><pre>    infoRequest = json.loads(request.body)</pre> <span>...</span></li></ol>
+              <ol start="69" class="context-line"><li onclick="toggle('pre140253163924296', 'post140253163924296')"><pre>    infoRequest = json.loads(request.body)</pre> <span>...</span></li></ol>
               
-                <ol start='70' class="post-context" id="post140144111953968"><li onclick="toggle('pre140144111953968', 'post140144111953968')"><pre>    buffer = StringIO.StringIO()</pre></li><li onclick="toggle('pre140144111953968', 'post140144111953968')"><pre>    suite = unittest.TestLoader().loadTestsFromTestCase(Users.unitTests)</pre></li><li onclick="toggle('pre140144111953968', 'post140144111953968')"><pre>    result = unittest.TextTestRunner(stream = buffer, verbosity = 2).run(suite)</pre></li><li onclick="toggle('pre140144111953968', 'post140144111953968')"><pre>#    response = Users.unitTests()</pre></li><li onclick="toggle('pre140144111953968', 'post140144111953968')"><pre></pre></li><li onclick="toggle('pre140144111953968', 'post140144111953968')"><pre>#Test if database is cleared</pre></li></ol>
+                <ol start='70' class="post-context" id="post140253163924296"><li onclick="toggle('pre140253163924296', 'post140253163924296')"><pre>    buffer = StringIO.StringIO()</pre></li><li onclick="toggle('pre140253163924296', 'post140253163924296')"><pre>    suite = unittest.TestLoader().loadTestsFromTestCase(self.unitTests)</pre></li><li onclick="toggle('pre140253163924296', 'post140253163924296')"><pre>    result = unittest.TextTestRunner(stream = buffer, verbosity = 2).run(suite)</pre></li><li onclick="toggle('pre140253163924296', 'post140253163924296')"><pre>#    response = Users.unitTests()</pre></li><li onclick="toggle('pre140253163924296', 'post140253163924296')"><pre></pre></li><li onclick="toggle('pre140253163924296', 'post140253163924296')"><pre>#Test if database is cleared</pre></li></ol>
               
             </div>
           
@@ -447,10 +447,10 @@ META:{&#39;COLORTERM&#39;: &#39;gnome-terminal&#39;,
           
             <div class="commands">
                 
-                    <a href="#" onclick="return varToggle(this, '140144111953968')"><span>&#x25b6;</span> Local vars</a>
+                    <a href="#" onclick="return varToggle(this, '140253163924296')"><span>&#x25b6;</span> Local vars</a>
                 
             </div>
-            <table class="vars" id="v140144111953968">
+            <table class="vars" id="v140253163924296">
               <thead>
                 <tr>
                   <th>Variable</th>
@@ -461,7 +461,7 @@ META:{&#39;COLORTERM&#39;: &#39;gnome-terminal&#39;,
                 
                   <tr>
                     <td>request</td>
-                    <td class="code"><pre>&#39;&lt;WSGIRequest\npath:/TESTAPI/unitTests,\nGET:&lt;QueryDict: {}&gt;,\nPOST:&lt;QueryDict: {}&gt;,\nCOOKIES:{},\nMETA:{\&#39;COLORTERM\&#39;: \&#39;gnome-terminal\&#39;,\n \&#39;COMPIZ_CONFIG_PROFILE\&#39;: \&#39;ubuntu\&#39;,\n \&#39;COMP_WORDBREAKS\&#39;: \&#39; \\t\\n&quot;\\\&#39;&gt;&lt;;|&amp;(:\&#39;,\n \&#39;CONTENT_LENGTH\&#39;: \&#39;\&#39;,\n \&#39;CONTENT_TYPE\&#39;: \&#39;text/plain\&#39;,\n \&#39;CSRF_COOKIE\&#39;: \&#39;7QQ7BrEiHKTd9ipp8mn6oMFNeOMJwPMO\&#39;,\n \&#39;DBUS_SESSION_BUS_ADDRESS\&#39;: \&#39;unix:abstract=/tmp/dbus-LK3E0cCbrL,guid=5c87e9953cf04be38c675c66000000e6\&#39;,\n \&#39;DEFAULTS_PATH\&#39;: \&#39;/usr/share/gconf/ubuntu.default.path\&#39;,\n \&#39;DESKTOP_SESSION\&#39;: \&#39;ubuntu\&#39;,\n \&#39;DISPLAY\&#39;: \&#39;:0.0\&#39;,\n \&#39;DJANGO_SETTINGS_MODULE\&#39;: \&#39;Warmup1.settings\&#39;,\n \&#39;GATEWAY_INTERFACE\&#39;: \&#39;CGI/1.1\&#39;,\n \&#39;GDMSESSION\&#39;: \&#39;ubuntu\&#39;,\n \&#39;GNOME_DESKTOP_SESSION_ID\&#39;: \&#39;this-is-deprecated\&#39;,\n \&#39;GNOME_KEYRING_CONTROL\&#39;: \&#39;/tmp/keyring-plsoRd\&#39;,\n \&#39;GNOME_KEYRING_PID\&#39;: \&#39;2274\&#39;,\n \&#39;GPG_AGENT_INFO\&#39;: \&#39;/tmp/keyring-plsoRd/gpg:0:1\&#39;,\n \&#39;HOME\&#39;: \&#39;/home/kevin\&#39;,\n \&#39;HTTP_ACCEPT_ENCODING\&#39;: \&#39;identity\&#39;,\n \&#39;HTTP_HOST\&#39;: \&#39;localhost:8000\&#39;,\n \&#39;LANG\&#39;: \&#39;en_US.UTF-8\&#39;,\n \&#39;LESSCLOSE\&#39;: \&#39;/usr/bin/lesspipe %s %s\&#39;,\n \&#39;LESSOPEN\&#39;: \&#39;| /usr/bin/lesspipe %s\&#39;,\n \&#39;LOGNAME\&#39;: \&#39;kevin\&#39;,\n \&#39;LS_COLORS\&#39;: \&#39;rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:\&#39;,\n \&#39;MANDATORY_PATH\&#39;: \&#39;/usr/share/gconf/ubuntu.mandatory.path\&#39;,\n \&#39;OLDPWD\&#39;: \&#39;/home/kevin/Documents/CS169/WarmUp1/warmup/Warmup1/users\&#39;,\n \&#39;PATH\&#39;: \&#39;/home/kevin/.rbenv/shims:/home/kevin/.rbenv/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games\&#39;,\n \&#39;PATH_INFO\&#39;: u\&#39;/TESTAPI/unitTests\&#39;,\n \&#39;PWD\&#39;: \&#39;/home/kevin/Documents/CS169/WarmUp1/warmup/Warmup1\&#39;,\n \&#39;QUERY_STRING\&#39;: \&#39;\&#39;,\n \&#39;REMOTE_ADDR\&#39;: \&#39;127.0.0.1\&#39;,\n \&#39;REMOTE_HOST\&#39;: \&#39;\&#39;,\n \&#39;REQUEST_METHOD\&#39;: \&#39;POST\&#39;,\n \&#39;RUN_MAIN\&#39;: \&#39;true\&#39;,\n \&#39;SCRIPT_NAME\&#39;: u\&#39;\&#39;,\n \&#39;SERVER_NAME\&#39;: \&#39;localhost\&#39;,\n \&#39;SERVER_PORT\&#39;: \&#39;8000\&#39;,\n \&#39;SERVER_PROTOCOL\&#39;: \&#39;HTTP/1.1\&#39;,\n \&#39;SERVER_SOFTWARE\&#39;: \&#39;WSGIServer/0.1 Python/2.7.3\&#39;,\n \&#39;SESSION_MANAGER\&#39;: \&#39;local/kevin:@/tmp/.ICE-unix/2285,unix/kevin:/tmp/.ICE-unix/2285\&#39;,\n \&#39;SHELL\&#39;: \&#39;/bin/bash\&#39;,\n \&#39;SHLVL\&#39;: \&#39;1\&#39;,\n \&#39;SSH_AGENT_PID\&#39;: \&#39;2323\&#39;,\n \&#39;SSH_AUTH_SOCK\&#39;: \&#39;/tmp/keyring-plsoRd/ssh\&#39;,\n \&#39;TERM\&#39;: \&#39;xterm\&#39;,\n \&#39;TZ\&#39;: \&#39;America/Chicago\&#39;,\n \&#39;UBUNTU_MENUPROXY\&#39;: \&#39;libappmenu.so\&#39;,\n \&#39;USER\&#39;: \&#39;kevin\&#39;,\n \&#39;WINDOWID\&#39;: \&#39;71303174\&#39;,\n \&#39;XAUTHORITY\&#39;: \&#39;/home/kevin/.Xauthority\&#39;,\n \&#39;XDG_CONFIG_DIRS\&#39;: \&#39;/etc/xdg/xdg-ubuntu:/etc/xdg\&#39;,\n \&#39;XDG_CURRENT_DESKTOP\&#39;: \&#39;Unity\&#39;,\n \&#39;XDG_DATA_DIRS\&#39;: \&#39;/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/\&#39;,\n \&#39;XDG_SEAT_PATH\&#39;: \&#39;/org/freedesktop/DisplayManager/Seat0\&#39;,\n \&#39;XDG_SESSION_COOKIE\&#39;: \&#39;9962c00af04af6f9b6a7f89d0000000e-1360357377.44568-1882898642\&#39;,\n \&#39;XDG_SESSION_PATH\&#39;: \&#39;/org/freedesktop/DisplayManager/Session0\&#39;,\n \&#39;_\&#39;: \&#39;/usr/bin/python\&#39;,\n \&#39;wsgi.errors\&#39;: &lt;open file \&#39;&lt;stderr&gt;\&#39;, mode \&#39;w\&#39; at 0x7f75e7e0f270&gt;,\n \&#39;wsgi.file_wrapper\&#39;: &lt;class wsgiref.util.FileWrapper at 0x306f3f8&gt;,\n \&#39;wsgi.input\&#39;: &lt;socket._fileobject object at 0x7f75d8032ed0&gt;,\n \&#39;wsgi.multiprocess\&#39;: False,\n \&#39;wsgi.multithread\&#39;: True,\n \&#39;wsgi.run_once\&#39;: False,\n \&#39;wsgi.url_scheme\&#39;: \&#39;http\&#39;,\n \&#39;wsgi.version\&#39;: (1, 0)}&gt;&#39;</pre></td>
+                    <td class="code"><pre>&#39;&lt;WSGIRequest\npath:/TESTAPI/unitTests,\nGET:&lt;QueryDict: {}&gt;,\nPOST:&lt;QueryDict: {}&gt;,\nCOOKIES:{},\nMETA:{\&#39;COLORTERM\&#39;: \&#39;gnome-terminal\&#39;,\n \&#39;COMPIZ_CONFIG_PROFILE\&#39;: \&#39;ubuntu\&#39;,\n \&#39;COMP_WORDBREAKS\&#39;: \&#39; \\t\\n&quot;\\\&#39;&gt;&lt;;|&amp;(:\&#39;,\n \&#39;CONTENT_LENGTH\&#39;: \&#39;\&#39;,\n \&#39;CONTENT_TYPE\&#39;: \&#39;text/plain\&#39;,\n \&#39;CSRF_COOKIE\&#39;: \&#39;xrVknGmbApEBoNWkYMpVpJvgJQvvZf14\&#39;,\n \&#39;DBUS_SESSION_BUS_ADDRESS\&#39;: \&#39;unix:abstract=/tmp/dbus-LK3E0cCbrL,guid=5c87e9953cf04be38c675c66000000e6\&#39;,\n \&#39;DEFAULTS_PATH\&#39;: \&#39;/usr/share/gconf/ubuntu.default.path\&#39;,\n \&#39;DESKTOP_SESSION\&#39;: \&#39;ubuntu\&#39;,\n \&#39;DISPLAY\&#39;: \&#39;:0.0\&#39;,\n \&#39;DJANGO_SETTINGS_MODULE\&#39;: \&#39;Warmup1.settings\&#39;,\n \&#39;GATEWAY_INTERFACE\&#39;: \&#39;CGI/1.1\&#39;,\n \&#39;GDMSESSION\&#39;: \&#39;ubuntu\&#39;,\n \&#39;GNOME_DESKTOP_SESSION_ID\&#39;: \&#39;this-is-deprecated\&#39;,\n \&#39;GNOME_KEYRING_CONTROL\&#39;: \&#39;/tmp/keyring-plsoRd\&#39;,\n \&#39;GNOME_KEYRING_PID\&#39;: \&#39;2274\&#39;,\n \&#39;GPG_AGENT_INFO\&#39;: \&#39;/tmp/keyring-plsoRd/gpg:0:1\&#39;,\n \&#39;HOME\&#39;: \&#39;/home/kevin\&#39;,\n \&#39;HTTP_ACCEPT_ENCODING\&#39;: \&#39;identity\&#39;,\n \&#39;HTTP_HOST\&#39;: \&#39;localhost:8000\&#39;,\n \&#39;LANG\&#39;: \&#39;en_US.UTF-8\&#39;,\n \&#39;LESSCLOSE\&#39;: \&#39;/usr/bin/lesspipe %s %s\&#39;,\n \&#39;LESSOPEN\&#39;: \&#39;| /usr/bin/lesspipe %s\&#39;,\n \&#39;LOGNAME\&#39;: \&#39;kevin\&#39;,\n \&#39;LS_COLORS\&#39;: \&#39;rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lz=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:\&#39;,\n \&#39;MANDATORY_PATH\&#39;: \&#39;/usr/share/gconf/ubuntu.mandatory.path\&#39;,\n \&#39;OLDPWD\&#39;: \&#39;/home/kevin/Documents/CS169/WarmUp1/warmup/Warmup1/users\&#39;,\n \&#39;PATH\&#39;: \&#39;/home/kevin/.rbenv/shims:/home/kevin/.rbenv/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games\&#39;,\n \&#39;PATH_INFO\&#39;: u\&#39;/TESTAPI/unitTests\&#39;,\n \&#39;PWD\&#39;: \&#39;/home/kevin/Documents/CS169/WarmUp1/warmup/Warmup1\&#39;,\n \&#39;QUERY_STRING\&#39;: \&#39;\&#39;,\n \&#39;REMOTE_ADDR\&#39;: \&#39;127.0.0.1\&#39;,\n \&#39;REMOTE_HOST\&#39;: \&#39;\&#39;,\n \&#39;REQUEST_METHOD\&#39;: \&#39;POST\&#39;,\n \&#39;RUN_MAIN\&#39;: \&#39;true\&#39;,\n \&#39;SCRIPT_NAME\&#39;: u\&#39;\&#39;,\n \&#39;SERVER_NAME\&#39;: \&#39;localhost\&#39;,\n \&#39;SERVER_PORT\&#39;: \&#39;8000\&#39;,\n \&#39;SERVER_PROTOCOL\&#39;: \&#39;HTTP/1.1\&#39;,\n \&#39;SERVER_SOFTWARE\&#39;: \&#39;WSGIServer/0.1 Python/2.7.3\&#39;,\n \&#39;SESSION_MANAGER\&#39;: \&#39;local/kevin:@/tmp/.ICE-unix/2285,unix/kevin:/tmp/.ICE-unix/2285\&#39;,\n \&#39;SHELL\&#39;: \&#39;/bin/bash\&#39;,\n \&#39;SHLVL\&#39;: \&#39;1\&#39;,\n \&#39;SSH_AGENT_PID\&#39;: \&#39;2323\&#39;,\n \&#39;SSH_AUTH_SOCK\&#39;: \&#39;/tmp/keyring-plsoRd/ssh\&#39;,\n \&#39;TERM\&#39;: \&#39;xterm\&#39;,\n \&#39;TZ\&#39;: \&#39;America/Chicago\&#39;,\n \&#39;UBUNTU_MENUPROXY\&#39;: \&#39;libappmenu.so\&#39;,\n \&#39;USER\&#39;: \&#39;kevin\&#39;,\n \&#39;WINDOWID\&#39;: \&#39;71303174\&#39;,\n \&#39;XAUTHORITY\&#39;: \&#39;/home/kevin/.Xauthority\&#39;,\n \&#39;XDG_CONFIG_DIRS\&#39;: \&#39;/etc/xdg/xdg-ubuntu:/etc/xdg\&#39;,\n \&#39;XDG_CURRENT_DESKTOP\&#39;: \&#39;Unity\&#39;,\n \&#39;XDG_DATA_DIRS\&#39;: \&#39;/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/\&#39;,\n \&#39;XDG_SEAT_PATH\&#39;: \&#39;/org/freedesktop/DisplayManager/Seat0\&#39;,\n \&#39;XDG_SESSION_COOKIE\&#39;: \&#39;9962c00af04af6f9b6a7f89d0000000e-1360357377.44568-1882898642\&#39;,\n \&#39;XDG_SESSION_PATH\&#39;: \&#39;/org/freedesktop/DisplayManager/Session0\&#39;,\n \&#39;_\&#39;: \&#39;/usr/bin/python\&#39;,\n \&#39;wsgi.errors\&#39;: &lt;open file \&#39;&lt;stderr&gt;\&#39;, mode \&#39;w\&#39; at 0x7f8f4d954270&gt;,\n \&#39;wsgi.file_wrapper\&#39;: &lt;class wsgiref.util.FileWrapper at 0x26933f8&gt;,\n \&#39;wsgi.input\&#39;: &lt;socket._fileobject object at 0x7f8f3c0340d0&gt;,\n \&#39;wsgi.multiprocess\&#39;: False,\n \&#39;wsgi.multithread\&#39;: True,\n \&#39;wsgi.run_once\&#39;: False,\n \&#39;wsgi.url_scheme\&#39;: \&#39;http\&#39;,\n \&#39;wsgi.version\&#39;: (1, 0)}&gt;&#39;</pre></td>
                   </tr>
                 
               </tbody>
@@ -473,13 +473,13 @@ META:{&#39;COLORTERM&#39;: &#39;gnome-terminal&#39;,
           <code>/usr/lib/python2.7/json/__init__.py</code> in <code>loads</code>
 
           
-            <div class="context" id="c140144249485936">
+            <div class="context" id="c140253163924152">
               
-                <ol start="319" class="pre-context" id="pre140144249485936"><li onclick="toggle('pre140144249485936', 'post140144249485936')"><pre>    To use a custom ``JSONDecoder`` subclass, specify it with the ``cls``</pre></li><li onclick="toggle('pre140144249485936', 'post140144249485936')"><pre>    kwarg; otherwise ``JSONDecoder`` is used.</pre></li><li onclick="toggle('pre140144249485936', 'post140144249485936')"><pre></pre></li><li onclick="toggle('pre140144249485936', 'post140144249485936')"><pre>    &quot;&quot;&quot;</pre></li><li onclick="toggle('pre140144249485936', 'post140144249485936')"><pre>    if (cls is None and encoding is None and object_hook is None and</pre></li><li onclick="toggle('pre140144249485936', 'post140144249485936')"><pre>            parse_int is None and parse_float is None and</pre></li><li onclick="toggle('pre140144249485936', 'post140144249485936')"><pre>            parse_constant is None and object_pairs_hook is None and not kw):</pre></li></ol>
+                <ol start="319" class="pre-context" id="pre140253163924152"><li onclick="toggle('pre140253163924152', 'post140253163924152')"><pre>    To use a custom ``JSONDecoder`` subclass, specify it with the ``cls``</pre></li><li onclick="toggle('pre140253163924152', 'post140253163924152')"><pre>    kwarg; otherwise ``JSONDecoder`` is used.</pre></li><li onclick="toggle('pre140253163924152', 'post140253163924152')"><pre></pre></li><li onclick="toggle('pre140253163924152', 'post140253163924152')"><pre>    &quot;&quot;&quot;</pre></li><li onclick="toggle('pre140253163924152', 'post140253163924152')"><pre>    if (cls is None and encoding is None and object_hook is None and</pre></li><li onclick="toggle('pre140253163924152', 'post140253163924152')"><pre>            parse_int is None and parse_float is None and</pre></li><li onclick="toggle('pre140253163924152', 'post140253163924152')"><pre>            parse_constant is None and object_pairs_hook is None and not kw):</pre></li></ol>
               
-              <ol start="326" class="context-line"><li onclick="toggle('pre140144249485936', 'post140144249485936')"><pre>        return _default_decoder.decode(s)</pre> <span>...</span></li></ol>
+              <ol start="326" class="context-line"><li onclick="toggle('pre140253163924152', 'post140253163924152')"><pre>        return _default_decoder.decode(s)</pre> <span>...</span></li></ol>
               
-                <ol start='327' class="post-context" id="post140144249485936"><li onclick="toggle('pre140144249485936', 'post140144249485936')"><pre>    if cls is None:</pre></li><li onclick="toggle('pre140144249485936', 'post140144249485936')"><pre>        cls = JSONDecoder</pre></li><li onclick="toggle('pre140144249485936', 'post140144249485936')"><pre>    if object_hook is not None:</pre></li><li onclick="toggle('pre140144249485936', 'post140144249485936')"><pre>        kw[&#39;object_hook&#39;] = object_hook</pre></li><li onclick="toggle('pre140144249485936', 'post140144249485936')"><pre>    if object_pairs_hook is not None:</pre></li><li onclick="toggle('pre140144249485936', 'post140144249485936')"><pre>        kw[&#39;object_pairs_hook&#39;] = object_pairs_hook</pre></li></ol>
+                <ol start='327' class="post-context" id="post140253163924152"><li onclick="toggle('pre140253163924152', 'post140253163924152')"><pre>    if cls is None:</pre></li><li onclick="toggle('pre140253163924152', 'post140253163924152')"><pre>        cls = JSONDecoder</pre></li><li onclick="toggle('pre140253163924152', 'post140253163924152')"><pre>    if object_hook is not None:</pre></li><li onclick="toggle('pre140253163924152', 'post140253163924152')"><pre>        kw[&#39;object_hook&#39;] = object_hook</pre></li><li onclick="toggle('pre140253163924152', 'post140253163924152')"><pre>    if object_pairs_hook is not None:</pre></li><li onclick="toggle('pre140253163924152', 'post140253163924152')"><pre>        kw[&#39;object_pairs_hook&#39;] = object_pairs_hook</pre></li></ol>
               
             </div>
           
@@ -487,10 +487,10 @@ META:{&#39;COLORTERM&#39;: &#39;gnome-terminal&#39;,
           
             <div class="commands">
                 
-                    <a href="#" onclick="return varToggle(this, '140144249485936')"><span>&#x25b6;</span> Local vars</a>
+                    <a href="#" onclick="return varToggle(this, '140253163924152')"><span>&#x25b6;</span> Local vars</a>
                 
             </div>
-            <table class="vars" id="v140144249485936">
+            <table class="vars" id="v140253163924152">
               <thead>
                 <tr>
                   <th>Variable</th>
@@ -553,13 +553,13 @@ META:{&#39;COLORTERM&#39;: &#39;gnome-terminal&#39;,
           <code>/usr/lib/python2.7/json/decoder.py</code> in <code>decode</code>
 
           
-            <div class="context" id="c140144249485792">
+            <div class="context" id="c140253163924008">
               
-                <ol start="359" class="pre-context" id="pre140144249485792"><li onclick="toggle('pre140144249485792', 'post140144249485792')"><pre>        self.scan_once = scanner.make_scanner(self)</pre></li><li onclick="toggle('pre140144249485792', 'post140144249485792')"><pre></pre></li><li onclick="toggle('pre140144249485792', 'post140144249485792')"><pre>    def decode(self, s, _w=WHITESPACE.match):</pre></li><li onclick="toggle('pre140144249485792', 'post140144249485792')"><pre>        &quot;&quot;&quot;Return the Python representation of ``s`` (a ``str`` or ``unicode``</pre></li><li onclick="toggle('pre140144249485792', 'post140144249485792')"><pre>        instance containing a JSON document)</pre></li><li onclick="toggle('pre140144249485792', 'post140144249485792')"><pre></pre></li><li onclick="toggle('pre140144249485792', 'post140144249485792')"><pre>        &quot;&quot;&quot;</pre></li></ol>
+                <ol start="359" class="pre-context" id="pre140253163924008"><li onclick="toggle('pre140253163924008', 'post140253163924008')"><pre>        self.scan_once = scanner.make_scanner(self)</pre></li><li onclick="toggle('pre140253163924008', 'post140253163924008')"><pre></pre></li><li onclick="toggle('pre140253163924008', 'post140253163924008')"><pre>    def decode(self, s, _w=WHITESPACE.match):</pre></li><li onclick="toggle('pre140253163924008', 'post140253163924008')"><pre>        &quot;&quot;&quot;Return the Python representation of ``s`` (a ``str`` or ``unicode``</pre></li><li onclick="toggle('pre140253163924008', 'post140253163924008')"><pre>        instance containing a JSON document)</pre></li><li onclick="toggle('pre140253163924008', 'post140253163924008')"><pre></pre></li><li onclick="toggle('pre140253163924008', 'post140253163924008')"><pre>        &quot;&quot;&quot;</pre></li></ol>
               
-              <ol start="366" class="context-line"><li onclick="toggle('pre140144249485792', 'post140144249485792')"><pre>        obj, end = self.raw_decode(s, idx=_w(s, 0).end())</pre> <span>...</span></li></ol>
+              <ol start="366" class="context-line"><li onclick="toggle('pre140253163924008', 'post140253163924008')"><pre>        obj, end = self.raw_decode(s, idx=_w(s, 0).end())</pre> <span>...</span></li></ol>
               
-                <ol start='367' class="post-context" id="post140144249485792"><li onclick="toggle('pre140144249485792', 'post140144249485792')"><pre>        end = _w(s, end).end()</pre></li><li onclick="toggle('pre140144249485792', 'post140144249485792')"><pre>        if end != len(s):</pre></li><li onclick="toggle('pre140144249485792', 'post140144249485792')"><pre>            raise ValueError(errmsg(&quot;Extra data&quot;, s, end, len(s)))</pre></li><li onclick="toggle('pre140144249485792', 'post140144249485792')"><pre>        return obj</pre></li><li onclick="toggle('pre140144249485792', 'post140144249485792')"><pre></pre></li><li onclick="toggle('pre140144249485792', 'post140144249485792')"><pre>    def raw_decode(self, s, idx=0):</pre></li></ol>
+                <ol start='367' class="post-context" id="post140253163924008"><li onclick="toggle('pre140253163924008', 'post140253163924008')"><pre>        end = _w(s, end).end()</pre></li><li onclick="toggle('pre140253163924008', 'post140253163924008')"><pre>        if end != len(s):</pre></li><li onclick="toggle('pre140253163924008', 'post140253163924008')"><pre>            raise ValueError(errmsg(&quot;Extra data&quot;, s, end, len(s)))</pre></li><li onclick="toggle('pre140253163924008', 'post140253163924008')"><pre>        return obj</pre></li><li onclick="toggle('pre140253163924008', 'post140253163924008')"><pre></pre></li><li onclick="toggle('pre140253163924008', 'post140253163924008')"><pre>    def raw_decode(self, s, idx=0):</pre></li></ol>
               
             </div>
           
@@ -567,10 +567,10 @@ META:{&#39;COLORTERM&#39;: &#39;gnome-terminal&#39;,
           
             <div class="commands">
                 
-                    <a href="#" onclick="return varToggle(this, '140144249485792')"><span>&#x25b6;</span> Local vars</a>
+                    <a href="#" onclick="return varToggle(this, '140253163924008')"><span>&#x25b6;</span> Local vars</a>
                 
             </div>
-            <table class="vars" id="v140144249485792">
+            <table class="vars" id="v140253163924008">
               <thead>
                 <tr>
                   <th>Variable</th>
@@ -581,7 +581,7 @@ META:{&#39;COLORTERM&#39;: &#39;gnome-terminal&#39;,
                 
                   <tr>
                     <td>_w</td>
-                    <td class="code"><pre>&lt;built-in method match of _sre.SRE_Pattern object at 0x7f75e033e350&gt;</pre></td>
+                    <td class="code"><pre>&lt;built-in method match of _sre.SRE_Pattern object at 0x7f8f4433f210&gt;</pre></td>
                   </tr>
                 
                   <tr>
@@ -591,7 +591,7 @@ META:{&#39;COLORTERM&#39;: &#39;gnome-terminal&#39;,
                 
                   <tr>
                     <td>self</td>
-                    <td class="code"><pre>&lt;json.decoder.JSONDecoder object at 0x7f75e0346790&gt;</pre></td>
+                    <td class="code"><pre>&lt;json.decoder.JSONDecoder object at 0x7f8f44347790&gt;</pre></td>
                   </tr>
                 
               </tbody>
@@ -603,13 +603,13 @@ META:{&#39;COLORTERM&#39;: &#39;gnome-terminal&#39;,
           <code>/usr/lib/python2.7/json/decoder.py</code> in <code>raw_decode</code>
 
           
-            <div class="context" id="c51582592">
+            <div class="context" id="c140253163924224">
               
-                <ol start="377" class="pre-context" id="pre51582592"><li onclick="toggle('pre51582592', 'post51582592')"><pre>        This can be used to decode a JSON document from a string that may</pre></li><li onclick="toggle('pre51582592', 'post51582592')"><pre>        have extraneous data at the end.</pre></li><li onclick="toggle('pre51582592', 'post51582592')"><pre></pre></li><li onclick="toggle('pre51582592', 'post51582592')"><pre>        &quot;&quot;&quot;</pre></li><li onclick="toggle('pre51582592', 'post51582592')"><pre>        try:</pre></li><li onclick="toggle('pre51582592', 'post51582592')"><pre>            obj, end = self.scan_once(s, idx)</pre></li><li onclick="toggle('pre51582592', 'post51582592')"><pre>        except StopIteration:</pre></li></ol>
+                <ol start="377" class="pre-context" id="pre140253163924224"><li onclick="toggle('pre140253163924224', 'post140253163924224')"><pre>        This can be used to decode a JSON document from a string that may</pre></li><li onclick="toggle('pre140253163924224', 'post140253163924224')"><pre>        have extraneous data at the end.</pre></li><li onclick="toggle('pre140253163924224', 'post140253163924224')"><pre></pre></li><li onclick="toggle('pre140253163924224', 'post140253163924224')"><pre>        &quot;&quot;&quot;</pre></li><li onclick="toggle('pre140253163924224', 'post140253163924224')"><pre>        try:</pre></li><li onclick="toggle('pre140253163924224', 'post140253163924224')"><pre>            obj, end = self.scan_once(s, idx)</pre></li><li onclick="toggle('pre140253163924224', 'post140253163924224')"><pre>        except StopIteration:</pre></li></ol>
               
-              <ol start="384" class="context-line"><li onclick="toggle('pre51582592', 'post51582592')"><pre>            raise ValueError(&quot;No JSON object could be decoded&quot;)</pre> <span>...</span></li></ol>
+              <ol start="384" class="context-line"><li onclick="toggle('pre140253163924224', 'post140253163924224')"><pre>            raise ValueError(&quot;No JSON object could be decoded&quot;)</pre> <span>...</span></li></ol>
               
-                <ol start='385' class="post-context" id="post51582592"><li onclick="toggle('pre51582592', 'post51582592')"><pre>        return obj, end</pre></li></ol>
+                <ol start='385' class="post-context" id="post140253163924224"><li onclick="toggle('pre140253163924224', 'post140253163924224')"><pre>        return obj, end</pre></li></ol>
               
             </div>
           
@@ -617,10 +617,10 @@ META:{&#39;COLORTERM&#39;: &#39;gnome-terminal&#39;,
           
             <div class="commands">
                 
-                    <a href="#" onclick="return varToggle(this, '51582592')"><span>&#x25b6;</span> Local vars</a>
+                    <a href="#" onclick="return varToggle(this, '140253163924224')"><span>&#x25b6;</span> Local vars</a>
                 
             </div>
-            <table class="vars" id="v51582592">
+            <table class="vars" id="v140253163924224">
               <thead>
                 <tr>
                   <th>Variable</th>
@@ -636,7 +636,7 @@ META:{&#39;COLORTERM&#39;: &#39;gnome-terminal&#39;,
                 
                   <tr>
                     <td>self</td>
-                    <td class="code"><pre>&lt;json.decoder.JSONDecoder object at 0x7f75e0346790&gt;</pre></td>
+                    <td class="code"><pre>&lt;json.decoder.JSONDecoder object at 0x7f8f44347790&gt;</pre></td>
                   </tr>
                 
                   <tr>
@@ -935,7 +935,7 @@ Exception Value: No JSON object could be decoded
       
         <tr>
           <td>wsgi.errors</td>
-          <td class="code"><pre>&lt;open file &#39;&lt;stderr&gt;&#39;, mode &#39;w&#39; at 0x7f75e7e0f270&gt;</pre></td>
+          <td class="code"><pre>&lt;open file &#39;&lt;stderr&gt;&#39;, mode &#39;w&#39; at 0x7f8f4d954270&gt;</pre></td>
         </tr>
       
         <tr>
@@ -1010,7 +1010,7 @@ Exception Value: No JSON object could be decoded
       
         <tr>
           <td>CSRF_COOKIE</td>
-          <td class="code"><pre>&#39;7QQ7BrEiHKTd9ipp8mn6oMFNeOMJwPMO&#39;</pre></td>
+          <td class="code"><pre>&#39;xrVknGmbApEBoNWkYMpVpJvgJQvvZf14&#39;</pre></td>
         </tr>
       
         <tr>
@@ -1025,7 +1025,7 @@ Exception Value: No JSON object could be decoded
       
         <tr>
           <td>wsgi.input</td>
-          <td class="code"><pre>&lt;socket._fileobject object at 0x7f75d8032ed0&gt;</pre></td>
+          <td class="code"><pre>&lt;socket._fileobject object at 0x7f8f3c0340d0&gt;</pre></td>
         </tr>
       
         <tr>
@@ -1708,14 +1708,7 @@ Exception Value: No JSON object could be decoded
       
         <tr>
           <td>EMAIL_BACKEND</td>
-          <td class="code"><pre>&#39;django.core.mail.backends.smtp.EmailBackend&#39;</pre></td>
-        </tr>
-      
-        <tr>
-          <td>DEFAULT_TABLESPACE</td>
-          <td class="code"><pre>&#39;&#39;</pre></td>
-        </tr>
- FAIL
+          <td class="code"><pre>&#39;django.core.mail.backends.smtp.EmailBackeFAIL
 
 ======================================================================
 FAIL: testUnit (testSimple.TestUnit)
@@ -1728,10 +1721,17 @@ Traceback (most recent call last):
 AssertionError: 200 != 500
 
 ----------------------------------------------------------------------
-Ran 2 tests in 0.222s
+Ran 2 tests in 0.224s
 
 FAILED (failures=1)
-     
+nd&#39;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_TABLESPACE</td>
+          <td class="code"><pre>&#39;&#39;</pre></td>
+        </tr>
+      
         <tr>
           <td>TEMPLATE_CONTEXT_PROCESSORS</td>
           <td class="code"><pre>(&#39;django.contrib.auth.context_processors.auth&#39;,

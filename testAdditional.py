@@ -22,27 +22,18 @@ def testLoginBadCredentials(self):
     respData = self.makeRequest("/users/add", method="POST", data = { 'user' : 'user1', 'password' : 'password'} )
     respData2 = self.makeRequest("/users/login", method="POST", data = { 'user' : 'user1', 'password' : 'password123'} )
     self.assertResponse(respData2, errCode = -1)
+     
     
-    
-    
-    
-    
-    
-    
-    
-    
-def testAddUserExists(self):
+def testBadUsername(self):
     respData = self.makeRequest("/users/add", method="POST", data = { 'user' : 'user1', 'password' : 'password'} )
-    respData2 = self.makeRequest("/users/add", method="POST", data = { 'user' : 'user1', 'password' : 'password'} )
-    self.assertResponse(respData2, errCode = -2)
+    self.assertResponse(respData, errCode = -3)
 
-def testAddUserExists(self):
+def testBadPassword(self):
     respData = self.makeRequest("/users/add", method="POST", data = { 'user' : 'user1', 'password' : 'password'} )
-    respData2 = self.makeRequest("/users/add", method="POST", data = { 'user' : 'user1', 'password' : 'password'} )
-    self.assertResponse(respData2, errCode = -2)
+    self.assertResponse(respData, errCode = -4)
 
-def testAddUserExists(self):
-    respData = self.makeRequest("/users/add", method="POST", data = { 'user' : 'user1', 'password' : 'password'} )
-    respData2 = self.makeRequest("/users/add", method="POST", data = { 'user' : 'user1', 'password' : 'password'} )
-    self.assertResponse(respData2, errCode = -2)
+def testDatabaseCleared(self):
+    respData = self.makeRequest("/TESTAPI/resetFixture", method="POST", data = {} )
+    respData2 = self.makeRequest("/users/login", method="POST", data = { 'user' : 'user1', 'password' : 'password'} )
+    self.assertResponse(respData2, errCode = -1)
 
