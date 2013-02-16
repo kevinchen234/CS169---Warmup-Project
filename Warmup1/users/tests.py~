@@ -40,7 +40,6 @@ class SimpleTest(TestCase):
         
     def test_incorrectLogin(self):
         #Test for logging in incorrectly
-        Users.user_objects.add("add", "add")
         self.assertEquals(Users.user_objects.login("add", "bcd"), -1)
         
     def test_badUsername(self):        
@@ -53,7 +52,6 @@ class SimpleTest(TestCase):
         
     def test_clearDatabase(self):        
         #Retest if database is cleared
-        Users.user_objects.add("add", "add")
         Users_user_objects.resetFixture()
         self.assertEquals(Users.user_objects.login("add", "add"), -1)
     

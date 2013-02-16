@@ -6,7 +6,14 @@ from django.shortcuts import render_to_response
 
 from django.views.decorators.csrf import csrf_exempt
 
+from django.test import TestCase
+from django.test.client import Client
+#from users.tests import SimpleTest
+import tests
 
+import random
+import unittest
+import StringIO
 import json
 
 
@@ -66,34 +73,9 @@ def resetFixture(request):
 
 @csrf_exempt        
 def unitTests(request):
-    infoRequest = json.loads(request.body)
     buffer = StringIO.StringIO()
-    suite = unittest.TestLoader().loadTestsFromTestCase(self.unitTests)
+    suite = unittest.TestLoader().loadTestsFromTestCase(tests.SimpleTest)
     result = unittest.TextTestRunner(stream = buffer, verbosity = 2).run(suite)
-#    response = Users.unitTests()
-
-#Test if database is cleared
-    self.assertEquals(self.resetFixture(), 1)
-#Test for logging in with user that's not in database
-    self.assertEquals(self.login("add", "add"), -1)
-    #Test for adding user not in database
-    self.assertEquals(self.add("add", "add"), 1)
-    #Test for adding user in database
-    self.assertEquals(self.add("add", "add"), -2)
-    #Test for logging in user in database
-    self.assertEquals(self.login("add", "add"), 2)
-    #Test for checking if count increases
-    self.assertEquals(self.login("add", "add"), 3)
-    #Test for logging in incorrectly
-    self.assertEquals(self.login("add", "bcd"), -1)
-    #Test for adding user with > 128 characters username
-    self.assertEquals(self.add("CYtEuLuuutZjgQgxpeUZJUWTkOxSnSjMCpbqVlEJYHYdONIZibcTbLvRSTbRazIelzyMDMRciWJSLOXVUxiFnhmozWvQHBBFJgcYmvNeZROTSoLZQHeHYqIIzhwCdvyas", "asdfds"), -3)
-    #Test for adding user with > 128 character password
-    self.assertEquals(self.add("sdfsdfs", "CYtEuLuuutZjgQgxpeUZJUWTkOxSnSjMCpbqVlEJYHYdONIZibcTbLvRSTbRazIelzyMDMRciWJSLOXVUxiFnhmozWvQHBBFJgcYmvNeZROTSoLZQHeHYqIIzhwCdvyadfss"), -4)
-    #Retest if database is cleared
-    self.resetFixture()
-    self.assertEquals(self.login("add", "add"), -1)
-    
 
 
     rv = {"totalTests": result.testsRun, "nrFailed": len(result.failures), "output": buffer.getvalue()}
